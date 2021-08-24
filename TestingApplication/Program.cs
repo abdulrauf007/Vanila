@@ -21,6 +21,27 @@ namespace TestingApplication
             Console.WriteLine(subResult);
             Console.WriteLine(mulResult);
             Console.WriteLine(divResult);
+
+
+            Student InfoStd = new Student();
+            var showFirstName = InfoStd.FirsttName;
+            var showLastName = InfoStd.LastName;
+            var showFatherName = InfoStd.FatherName;
+            var showCNIC = InfoStd.CNIC;
+            var showCell = InfoStd.Cell;
+            var showInstitute = InfoStd.Institute;
+            var showAddress = InfoStd.Address;
+
+            Console.WriteLine(showFirstName);
+            Console.WriteLine(showLastName);
+            Console.WriteLine(showFatherName);
+            Console.WriteLine(showCNIC);
+            Console.WriteLine(showCell);
+            Console.WriteLine(showInstitute);
+            Console.WriteLine(showAddress);
+
+
+
         }
     }
 }
