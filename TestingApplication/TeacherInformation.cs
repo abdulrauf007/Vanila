@@ -4,12 +4,12 @@ using System.Text;
 
 namespace TestingApplication
 {
-    public class StudentInformation
+    class TeacherInformation
     {
-       public Student GetStudentinfo(Student student)
+        public Teacher GetTeacherInfo(Teacher teacher)
         {
-            return student;
+            return teacher;
         }
+             
     }
 }
-
