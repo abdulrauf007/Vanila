@@ -10,6 +10,8 @@ namespace TestingApplication
         static void Main(string[] args)
         {
 
+            /////// //////////Books ////////////////////
+
             //Console.WriteLine("Please Enter Book Information");
             //Console.WriteLine("Please Eneter Book Name");
             //var bookName = Console.ReadLine();
@@ -49,6 +51,8 @@ namespace TestingApplication
             //    booksHub.BookName, booksHub.AuthorName, booksHub.PublisherName, booksHub.ContributerName, booksHub.NumberofPages, booksHub.PDateTime);
 
 
+            /////// //////////List of students ////////////////////
+
             //var students = new List<Student>()
             //{
             //    new Student
@@ -69,58 +73,61 @@ namespace TestingApplication
             //var listOfStudent = stdInfo.GetStudentinfos(students);
 
 
-            var students = new List<Student>()
-            {
-                new Student
-                {
-                    FirsttName = "Abdul",
-                    LastName = "Rauf",
-                    FatherName ="Nehal",
-                    CNIC ="00000",
-                    Cell = "090078601",
-                    Institute = "NHU",
-                    Address = "KHI"
+            //var students = new List<Student>()
+            //{
+            //    new Student
+            //    {
+            //        FirsttName = "Abdul",
+            //        LastName = "Rauf",
+            //        FatherName ="Nehal",
+            //        CNIC ="00000",
+            //        Cell = "090078601",
+            //        Institute = "NHU",
+            //        Address = "KHI"
 
-                },
+            //    },
 
-                new Student
-                {
-                    FirsttName = "John",
-                    LastName = "Stephen",
-                    FatherName ="Louis",
-                    CNIC ="09878",
-                    Cell = "09576575",
-                    Institute = "NHU",
-                    Address = "KHI"
+            //    new Student
+            //    {
+            //        FirsttName = "John",
+            //        LastName = "Stephen",
+            //        FatherName ="Louis",
+            //        CNIC ="09878",
+            //        Cell = "09576575",
+            //        Institute = "NHU",
+            //        Address = "KHI"
 
-                },
-                 new Student
-                {
-                    FirsttName = "Yasir",
-                    LastName = "khan",
-                    FatherName ="Shahzaib",
-                    CNIC ="098434378",
-                    Cell = "0957343436575",
-                    Institute = "NHU",
-                    Address = "KHI"
+            //    },
+            //     new Student
+            //    {
+            //        FirsttName = "Yasir",
+            //        LastName = "khan",
+            //        FatherName ="Shahzaib",
+            //        CNIC ="098434378",
+            //        Cell = "0957343436575",
+            //        Institute = "NHU",
+            //        Address = "KHI"
 
-                },
+            //    },
 
-                 new Student
-                {
-                    FirsttName = "Arsalan",
-                    LastName = "khan",
-                    FatherName ="Hassan",
-                    CNIC ="0984345558",
-                    Cell = "03439986575",
-                    Institute = "NHU",
-                    Address = "KHI"
+            //     new Student
+            //    {
+            //        FirsttName = "Arsalan",
+            //        LastName = "khan",
+            //        FatherName ="Hassan",
+            //        CNIC ="0984345558",
+            //        Cell = "03439986575",
+            //        Institute = "NHU",
+            //        Address = "KHI"
 
-                }
-            };
+            //    }
+            //};
 
-            StudentInformation StdInfo = new StudentInformation();
-            var ListOfInformation = StdInfo.GetStudentsInfo(students);
+            //StudentInformation StdInfo = new StudentInformation();
+            //var ListOfInformation = StdInfo.GetStudentsInfo(students);
+
+
+            /////// //////////Shelf ////////////////////
 
             //Console.WriteLine("Please Enter Shelf Information");
             //Console.WriteLine("How many number of Rows in this Shelf");
@@ -161,6 +168,8 @@ namespace TestingApplication
             //Console.WriteLine("Contributer name {0}", booksHub.ContributerName);
             //Console.WriteLine("Number of pages {0}", booksHub.NumberofPages);
             //Console.WriteLine("Publish Date and Time {0}", booksHub.PDateTime);
+
+            /////// //////////Calculator ////////////////////
 
             //    Calculator Cal = new Calculator();
             //    var addResultInt = Cal.Add(10, 2);
@@ -217,7 +226,7 @@ namespace TestingApplication
             //    Console.WriteLine(divResultDecimal);
             //    Console.WriteLine(divResultLong);
 
-
+            /////// //////////Student information ////////////////////
 
             //    Console.WriteLine(" Please Enter Student Information");
             //    Console.WriteLine("Enter Your First Name");
@@ -256,6 +265,8 @@ namespace TestingApplication
             //    StudentInformation stdInfo = new StudentInformation();
             //    var StudentModel = stdInfo.GetStudentinfo(infoStd);
 
+
+            /////// //////////Teacher information ////////////////////
 
             //    Console.WriteLine(" Please Enter Teacher Information");
             //    Console.WriteLine("Enter Your Good Name");
@@ -296,6 +307,213 @@ namespace TestingApplication
 
             //    TeacherInformation instructorInfo = new TeacherInformation();
             //    var TeacherModel = instructorInfo.GetTeacherInfo(teacherInfo);
+
+
+
+            /////// ///////////// Country List /////////////////
+
+            //var Country = new List<CountryList>()
+            //{
+            //    new CountryList
+
+            //    {
+            //    CountryName = "Pakistan",
+            //    City = "Karachi",
+            //    Area = "North Karachi",
+            //    Block = "Sir Syed Block",
+            //    street = "Khayaban Street"
+            //    },
+
+            //    new CountryList
+
+            //    {
+            //    CountryName = "India",
+            //    City = "Mumbai",
+            //    Area = "achar Gali",
+            //    Block = "Akbar Chowk",
+            //    street = "anak kali"
+            //    },
+
+
+            //};
+
+            //CountryInformation infoCountry = new CountryInformation();
+            //var listofCountry = infoCountry.GetCountryList(Country);
+
+
+            ///////////////// List ////////////////////////////////
+
+            //List<string> countriers = new List<string>()
+            //{"Pakistan","India","New York", "USA","England"};
+
+            //var lenthCounry = countriers.Count;
+            //for (int i = 0; i <countriers.Count; i++)
+            //{
+            //    Console.WriteLine(countriers[i]);
+            //}
+
+            //Console.WriteLine(countriers);
+
+            List<int> Num = new List<int>()
+            { 1,3,4,6,6,67,7,44,4,45,5};
+
+            int lengthNum = Num.Count;
+            for(int i=0; i<Num.Count; i++)
+            {
+                Console.WriteLine(Num[i]);
+            }
+
+
+            List<string> fruits = new List<string>()
+            {
+                "Mango", "Banana", "Cherry", 
+            };
+
+            for(int i=0; i<fruits.Count; i++)
+            {
+                Console.WriteLine(fruits[i]);
+            }
+
+            List<string> Products = new List<string>
+            {
+                "Laptop", "Computer", "Cables","USB","Headset"
+            };
+
+            for (int i = 0; i<Products.Count; i++)
+            {
+                Console.WriteLine(Products[i]);
+            }
+
+            List<int> values = new List<int>()
+            {
+                90,990,101,221,121
+            };
+
+            for (int i=0; i<values.Count; i++)
+            {
+                Console.WriteLine(values[i]);
+            }
+
+
+            
+            //////////// Table ////////////////
+            
+            //Console.WriteLine("Table2");
+            //for (int i = 1; i <=10; i++)
+            //{
+                
+            //    Console.WriteLine(2*i);
+            //}
+
+            //Console.WriteLine("Table3");
+            //for (int i=1; i<=10; i++)
+            //{
+            //    Console.WriteLine(3*i);
+            //}
+
+            //Console.WriteLine("Table4");
+            //for (int i =1; i<=10; i++ )
+            //{
+            //    Console.WriteLine(4*i);
+            //}
+
+            //Console.WriteLine("Table5");
+            //for (int i = 1; i <= 10; i++)
+            //{
+            //    Console.WriteLine(5*i);
+            //}
+
+            //Console.WriteLine("Table6");
+            //for(int i=1; i<=10; i++)
+            //{
+            //    Console.WriteLine(6*i);
+            //}
+
+            //Console.WriteLine("Table7");
+            //for(int i=1; i<=10; i++)
+            //{
+            //    Console.WriteLine(7*i);
+            //}
+
+            //Console.WriteLine("Table8");
+            //for (int i=1; i<=10; i++)
+            //{
+            //    Console.WriteLine(8*1);
+
+            //}
+
+            //Console.WriteLine("Table9");
+            //for(int i=1; i<=10; i++)
+            //{
+            //    Console.WriteLine(9*i);
+            //}
+
+            //Console.WriteLine("Table10");
+            //for(int i=1; i<=10; i++)
+            //{
+            //    Console.WriteLine(10*i);
+            //}
+
+
+            /////////// Reverse Table /////////
+
+
+            //Console.WriteLine("Table2");
+            //for(int i=10; i>=1; i--)
+            //{
+            //    Console.WriteLine(2*i);
+            //}
+
+            //Console.WriteLine("Table3");
+            //for(int i=10; i>=1; i--)
+            //{
+            //    Console.WriteLine(3*i);
+            //}
+
+            //Console.WriteLine("Table5");
+            //for(int i=10; i>=1; i--)
+            //{
+            //    Console.WriteLine(4*i);
+            //}
+
+            //Console.WriteLine("Table5");
+            //for(int i=10; i>=1; i--)
+            //{
+            //    Console.WriteLine(5*i);
+            //}
+
+            //Console.WriteLine("Table6");
+            //for(int i=10; i>=1; i--)
+            //{
+            //    Console.WriteLine(6*i);
+            //}
+
+            //Console.WriteLine("Table7");
+            //for(int i=10; i>=1; i--)
+            //{
+            //    Console.WriteLine(7*i);
+            //}
+
+            //Console.WriteLine("Table8");
+            //for(int i=10; i>=1; i--)
+            //{
+            //    Console.WriteLine(8*i);
+            //}
+
+            //Console.WriteLine("Table9");
+            //for(int i=10; i>=1; i--)
+            //{
+            //    Console.WriteLine(9*i);
+            //}
+
+            //Console.WriteLine("Table10");
+            //for(int i=10; i>=1; i--)
+            //{
+            //    Console.WriteLine(10*i);
+            //}
+
+
+
 
         }
     }
