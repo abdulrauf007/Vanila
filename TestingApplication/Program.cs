@@ -52,6 +52,14 @@ namespace TestingApplication
 
 
             /////// //////////List of students ////////////////////
+            ///
+            var std = new Student
+            {
+                Address = "yryyt",
+                Cell = "gj"
+            };
+
+
 
             //var students = new List<Student>()
             //{
@@ -69,8 +77,19 @@ namespace TestingApplication
             //    }
             //};
 
-            //StudentInformation stdInfo = new StudentInformation();
-            //var listOfStudent = stdInfo.GetStudentinfos(students);
+            var std1 = new Student
+            {
+                FirsttName = "Abdul",
+                LastName = "Rauf",
+                FatherName = "Nehal",
+                CNIC = "00000",
+                Cell = "090078601",
+                Institute = "NHU",
+                Address = "KHI"
+
+            };
+            StudentInformation stdInfo = new StudentInformation(std1);
+            var listOfStudent = stdInfo.GetStudentinfo(std);
 
 
             //var students = new List<Student>()
@@ -354,54 +373,54 @@ namespace TestingApplication
 
             //Console.WriteLine(countriers);
 
-            List<int> Num = new List<int>()
-            { 1,3,4,6,6,67,7,44,4,45,5};
+            //List<int> Num = new List<int>()
+            //{ 1,3,4,6,6,67,7,44,4,45,5};
 
-            int lengthNum = Num.Count;
-            for(int i=0; i<Num.Count; i++)
-            {
-                Console.WriteLine(Num[i]);
-            }
-
-
-            List<string> fruits = new List<string>()
-            {
-                "Mango", "Banana", "Cherry", 
-            };
-
-            for(int i=0; i<fruits.Count; i++)
-            {
-                Console.WriteLine(fruits[i]);
-            }
-
-            List<string> Products = new List<string>
-            {
-                "Laptop", "Computer", "Cables","USB","Headset"
-            };
-
-            for (int i = 0; i<Products.Count; i++)
-            {
-                Console.WriteLine(Products[i]);
-            }
-
-            List<int> values = new List<int>()
-            {
-                90,990,101,221,121
-            };
-
-            for (int i=0; i<values.Count; i++)
-            {
-                Console.WriteLine(values[i]);
-            }
+            //int lengthNum = Num.Count;
+            //for (int i = 0; i < Num.Count; i++)
+            //{
+            //    Console.WriteLine(Num[i]);
+            //}
 
 
-            
+            //List<string> fruits = new List<string>()
+            //{
+            //    "Mango", "Banana", "Cherry",
+            //};
+
+            //for (int i = 0; i < fruits.Count; i++)
+            //{
+            //    Console.WriteLine(fruits[i]);
+            //}
+
+            //List<string> Products = new List<string>
+            //{
+            //    "Laptop", "Computer", "Cables","USB","Headset"
+            //};
+
+            //for (int i = 0; i < Products.Count; i++)
+            //{
+            //    Console.WriteLine(Products[i]);
+            //}
+
+            //List<int> values = new List<int>()
+            //{
+            //    90,990,101,221,121
+            //};
+
+            //for (int i = 0; i < values.Count; i++)
+            //{
+            //    Console.WriteLine(values[i]);
+            //}
+
+
+
             //////////// Table ////////////////
-            
+
             //Console.WriteLine("Table2");
             //for (int i = 1; i <=10; i++)
             //{
-                
+
             //    Console.WriteLine(2*i);
             //}
 
@@ -513,7 +532,40 @@ namespace TestingApplication
             //}
 
 
+            //////////// List Of Students using For Loop//////////////
 
+            var students = new List<Student>
+            {
+               new Student
+               {
+                   FirsttName = "John",
+                   LastName = "Cena",
+                   FatherName = "NAS",
+                   CNIC = "90909090909",
+                   Cell = "090078601",
+                   Address = "USA",
+                   Institute = "UOK"
+               },
+               
+              new Student
+              {
+                  FirsttName = "Poo",
+                  LastName = "Michel",
+                  FatherName = "Mr Lee",
+                  Cell = "090908094",
+                  CNIC  ="73837",
+                  Address = "UAE",
+                  Institute = "UOK"
+                  
+              },
+            };
+            
+           for (int i=0; i<students.Count; i++)
+            {
+                Console.WriteLine("First Name  {0} , Last Name {1}, Father Name {2}, Cell {3}, CNIC {4}, Address {5}, Institute {6}",
+                    students[i].FirsttName, students[i].LastName, students[i].FatherName,
+                    students[i].Cell,students[i].CNIC, students[i].Address, students[i].Institute);
+            }
 
         }
     }
