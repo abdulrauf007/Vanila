@@ -34,29 +34,30 @@ namespace TestingApplication
 
             /////////// Teacher List Using Constructor ////////////
 
-            TeacherInformation defaultTeacherInfo = new TeacherInformation();
-            var deftechInfo = defaultTeacherInfo.defaultTeacherValue();
+            //TeacherInformation defaultTeacherInfo = new TeacherInformation();
+            //var deftechInfo = defaultTeacherInfo.defaultTeacherValue();
 
-            TeacherInformation singleTecher = new TeacherInformation();
-            var teachersingle = singleTecher.Singleteacher();
+            //TeacherInformation singleTecher = new TeacherInformation();
+            //var teachersingle = singleTecher.Singleteacher();
 
-            TeacherInformation multiTeacher = new TeacherInformation(new List<Teacher>
-            {
-                new Teacher
-                {
-                    TeacherName ="John",
-                    FatherName = "Lee",
-                    CNICNo = "0909",
-                    CellNo = "08988",
-                    Address = "KHI",
-                    Qualification = "BS",
-                    Subjects = "CS",
-                    GraduationSchool = "NHU"
-                }
-            });
-          
+            //TeacherInformation multiTeacher = new TeacherInformation(new List<Teacher>
+            //{
+            //    new Teacher
+            //    {
+            //        TeacherName ="John",
+            //        FatherName = "Lee",
+            //        CNICNo = "0909",
+            //        CellNo = "08988",
+            //        Address = "KHI",
+            //        Qualification = "BS",
+            //        Subjects = "CS",
+            //        GraduationSchool = "NHU"
+            //    }
+            //});
 
 
+            teacher getTeacher = new teacher();
+            getTeacher.TeacherName
 
 
 
