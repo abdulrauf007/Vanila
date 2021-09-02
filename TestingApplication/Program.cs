@@ -56,8 +56,16 @@ namespace TestingApplication
             //});
 
 
-            teacher getTeacher = new teacher();
-            getTeacher.TeacherName
+            teacher getTeacher = new teacher 
+            { 
+                TeacherName = "Lee",
+                FName = "Jhon",
+                Qulification = "CS",
+                CreateDateTime = Convert.ToDateTime("20/5/2021")
+
+            };
+            getTeacher.TeacherName = "";
+            getTeacher.
 
 
 
