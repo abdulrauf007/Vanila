@@ -6,28 +6,9 @@ namespace TestingApplication
 {
     class Base
     {
-        public DateTime CreateDateTime { get; set; }
-        public DateTime UpdateDateTime { get; set; }
-        private String Createdby { get; set; }
-        private String updatedby { get; set; }
+        public String CreatedBy { get; set; }
+        public String CreatedOn { get; set; }
+        public String UpdatedBy { get; set; }
+        public string UpdatedOn { get; set; }
     }
-
-    class student : Base
-    {
-        public String StdName { get; set; }
-        public String FName { get; set; }
-        public String School { get; set; }
-    }
-
-    class teacher : Base
-    {
-        public String TeacherName { get; set; }
-        public String FName { get; set; }
-        public String Qulification { get; set; }
-
-       
-        
-    }
-
-     
 }
