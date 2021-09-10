@@ -6,9 +6,9 @@ namespace TestingApplication
 {
     class Base
     {
-        public String CreatedBy { get; set; }
-        public String CreatedOn { get; set; }
-        public String UpdatedBy { get; set; }
-        public string UpdatedOn { get; set; }
+        public int CreatedBy { get; set; }
+        public DateTime CreatedOn { get; set; }
+        public int UpdatedBy { get; set; }
+        public DateTime UpdatedOn { get; set; }
     }
 }

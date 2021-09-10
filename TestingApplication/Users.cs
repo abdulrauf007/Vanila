@@ -6,6 +6,7 @@ namespace TestingApplication
 {
     class Users:Base
     {
+        public int Id { get; set; }
         public String Name { get; set; }
         public String FatherName { get; set; }
         public String Address { get; set; }

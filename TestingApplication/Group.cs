@@ -6,8 +6,7 @@ namespace TestingApplication
 {
     class Group:Base
     {
-        public String AllStudentData { get; set; }
-        public int TotalStudent { get; set; }
-        public String TotalDepartment { get; set; }
+        public String GroupName { get; set; }
+        public int Id { get; set; }
     }
 }
