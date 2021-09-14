@@ -6,16 +6,24 @@ namespace TestingApplication
     class Program
     {
 
-        public string remove(int a,int b,string input)
+        public string ValueReplace(string str)
         {
-            return input.Remove(a, b);
+           var result =  str.Length > 1 ? str.Substring(0, 1) + str.Substring(str.Length - 1) + str.Substring(2, str.Length - 3) + str.Substring(1, 1) : str;
+            return result;
         }
 
+        public string FirstLastValueReplace (string vReplace)
+        {
+            var result = vReplace.Length > 1 ?
+            vReplace.Substring(vReplace.Length - 1) + vReplace.Substring(1, vReplace.Length - 2) + vReplace.Substring(0, 1) : vReplace;
 
+            return result;
+        }
         static void Main(string[] args)
         {
 
-            //UserInformation userInfo = new UserInformation();
+            //UserInform
+            //ation userInfo = new UserInformation();
             //var Infouser = userInfo.AddUser(new Users 
             //{
             //    Id = 01,
@@ -244,20 +252,35 @@ namespace TestingApplication
 
             // Example 14 Write a C# program remove specified a character from a non-empty string using index of a character
 
-            Console.WriteLine("Enter the Starting Position");
-            var a = Convert.ToInt32( Console.ReadLine());
+            //Console.WriteLine("Enter the Starting Position");
+            //var a = Convert.ToInt32(Console.ReadLine());
 
-            Console.WriteLine("Enter the Number of Length");
-            var b = Convert.ToInt32(Console.ReadLine());
+            //Console.WriteLine("Enter the Number of Length");
+            //var b = Convert.ToInt32(Console.ReadLine());
 
-            Console.WriteLine("Enter the String");
-            var input = (Console.ReadLine());
+            //Console.WriteLine("Enter the String");
+            //var input = (Console.ReadLine());
 
-            Program Ctr = new Program();
-            var ip = Ctr.remove(a,b,input);
+            //Program Ctr = new Program();
+            //var ip = Ctr.remove(a, b, input);
 
-            Console.WriteLine(ip);
-           
+            //Console.WriteLine(ip);
+
+            // Example 16  Write a C# program to create a new string from a given string where the first and last characters will change their positions. Go to the editor
+            Console.WriteLine("2nd and 2nd Last Value Replace");
+            Console.WriteLine("Enter a string");
+            var result = Console.ReadLine();
+            Program replaceValue = new Program();
+            var vReplace = replaceValue.ValueReplace(result);
+            Console.WriteLine(vReplace);
+
+
+            Console.WriteLine("1st and Last Value Replace");
+            Console.WriteLine( "Enter string");
+            var output = Console.ReadLine();
+            Program firstValueReplace = new Program();
+            var Rvalue = firstValueReplace.FirstLastValueReplace(output);
+            Console.WriteLine(Rvalue);
 
         }
 
