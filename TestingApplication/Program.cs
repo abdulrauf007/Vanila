@@ -19,6 +19,27 @@ namespace TestingApplication
 
             return result;
         }
+
+        public string ThirdnthirdLastValueReplace(string thirdValueReplace)
+        {
+            var result = thirdValueReplace.Length > 6 ?
+            thirdValueReplace.Substring(0, 2) +
+            thirdValueReplace.Substring(thirdValueReplace.Length - 3,1) +
+            thirdValueReplace.Substring(3, thirdValueReplace.Length - 3-3) +
+            thirdValueReplace.Substring(2,1) +
+            thirdValueReplace.Substring(thirdValueReplace.Length-2,2): thirdValueReplace; 
+
+            return result;
+        }
+
+        public string AddingCharacterFnL(string valueAdd)
+        {
+            var result =
+            valueAdd.Substring(0, 1) +  valueAdd +
+            valueAdd.Substring(0, 1);
+
+            return result;
+        }
         static void Main(string[] args)
         {
 
@@ -267,21 +288,35 @@ namespace TestingApplication
             //Console.WriteLine(ip);
 
             // Example 16  Write a C# program to create a new string from a given string where the first and last characters will change their positions. Go to the editor
-            Console.WriteLine("2nd and 2nd Last Value Replace");
-            Console.WriteLine("Enter a string");
+            //Console.WriteLine("2nd and 2nd Last Value Replace");
+            //Console.WriteLine("Enter a string");
+            //var result = Console.ReadLine();
+            //Program replaceValue = new Program();
+            //var vReplace = replaceValue.ValueReplace(result);
+            //Console.WriteLine(vReplace);
+
+
+            //Console.WriteLine("1st and Last Value Replace");
+            //Console.WriteLine( "Enter string");
+            //var output = Console.ReadLine();
+            //Program firstValueReplace = new Program();
+            //var Rvalue = firstValueReplace.FirstLastValueReplace(output);
+            //Console.WriteLine(Rvalue);
+
+            //Console.WriteLine("3rd and 3rd Last Value Replaced ");
+            //Console.WriteLine("Enter String");
+            //var outcome = Console.ReadLine();
+            //Program thirdValueReplaced = new Program();
+            //var thirdValues = thirdValueReplaced.ThirdnthirdLastValueReplace(outcome);
+            //Console.WriteLine(thirdValues);
+
+            //Write a C# program to create a new string from a given string (length 1 or more ) with the first character added at the front and back.
+
+            Console.WriteLine("Enter String");
             var result = Console.ReadLine();
-            Program replaceValue = new Program();
-            var vReplace = replaceValue.ValueReplace(result);
-            Console.WriteLine(vReplace);
-
-
-            Console.WriteLine("1st and Last Value Replace");
-            Console.WriteLine( "Enter string");
-            var output = Console.ReadLine();
-            Program firstValueReplace = new Program();
-            var Rvalue = firstValueReplace.FirstLastValueReplace(output);
-            Console.WriteLine(Rvalue);
-
+            Program addValue = new Program();
+            var ValueAd = addValue.AddingCharacterFnL(result);
+            Console.WriteLine(ValueAd);
         }
 
 
