@@ -310,13 +310,94 @@ namespace TestingApplication
             //var thirdValues = thirdValueReplaced.ThirdnthirdLastValueReplace(outcome);
             //Console.WriteLine(thirdValues);
 
-            //Write a C# program to create a new string from a given string (length 1 or more ) with the first character added at the front and back.
+            //Example 17: Write a C# program to create a new string from a given string (length 1 or more ) with the first character added at the front and back.
 
-            Console.WriteLine("Enter String");
-            var result = Console.ReadLine();
-            Program addValue = new Program();
-            var ValueAd = addValue.AddingCharacterFnL(result);
-            Console.WriteLine(ValueAd);
+            //Console.WriteLine("Enter String");
+            //var result = Console.ReadLine();
+            //Program addValue = new Program();
+            //var ValueAd = addValue.AddingCharacterFnL(result);
+            //Console.WriteLine(ValueAd);
+
+            //Example 18: Write a C# program to check two given integers and return true if one is negative and one is positive.
+
+            //Console.WriteLine("Please Enter First Value");
+            //int x = Convert.ToInt32(Console.ReadLine());
+
+            //Console.WriteLine("Please Enter Second Value");
+            //int y = Convert.ToInt32(Console.ReadLine());
+
+            //Console.WriteLine("Checking Either Positive and Negative");
+            //Console.WriteLine((-1<1 && 2>-1 )||(-2>1 && 2<-1));
+
+            //AND & OR Operators
+
+            // Example 1 OR: In this below condition; if the value1 is equal to value2 then it will print true otherwise it will print false.
+
+            //Console.WriteLine("Enter the Value1");
+            //int Value1 = Convert.ToInt32(Console.ReadLine());
+
+            //Console.WriteLine("Enter the Value1");
+            //int Value2 = Convert.ToInt32(Console.ReadLine());
+
+            //Console.WriteLine(Value1 == Value2 || Value1 >= Value2);
+
+            // Example 2 OR: In this below condition; if the value is equal to other value it will print true, if the value1 is greaterthan value2 then also it will print true, otherwise it will print false.
+
+            //Console.WriteLine("Enter The Number 1");
+            //int Number1 = Convert.ToInt32(Console.ReadLine());
+
+            //Console.WriteLine("Enter The Number 2");
+            //int Number2 = Convert.ToInt32(Console.ReadLine());
+
+            //Console.WriteLine((Number1 == Number2) || (Number1 > Number2));
+
+            //Example 3 AND:
+
+            //Console.WriteLine("Enter you Your Desire Value1");
+            //int Val1 = Convert.ToInt32(Console.ReadLine());
+
+            //Console.WriteLine("Enter you Your Desire Value2");
+            //int Val2 = Convert.ToInt32(Console.ReadLine());
+
+            //Console.WriteLine((Val1 < Val2) && (Val1 >= Val2));
+
+            //Eample 4 AND confusion??
+
+            Console.WriteLine("Enter the value of X");
+            int x = Convert.ToInt32(Console.ReadLine());
+
+            Console.WriteLine("Enter the Value of Y");
+            int y = Convert.ToInt32(Console.ReadLine());
+
+            Console.WriteLine((x == y) && (x <= y));
+
+            //Example 5 AND and OR
+
+            //Console.WriteLine("Are You Pakistani");
+            //string Nationality = Console.ReadLine();
+
+            //Console.WriteLine("Are You Muslim");
+            //string Religion = Console.ReadLine();
+            //if (Nationality == Religion)
+            //{
+            //    Console.WriteLine("Please Proceed for National ID Card");
+            //}
+
+            //if (Nationality != Religion)
+            //{
+            //    Console.WriteLine("Sorry! You are Not Eligible for ID Cars");
+            //}
+
+
+
+
+
+
+
+
+
+
+
         }
 
 
