@@ -363,13 +363,13 @@ namespace TestingApplication
 
             //Eample 4 AND confusion??
 
-            Console.WriteLine("Enter the value of X");
-            int x = Convert.ToInt32(Console.ReadLine());
+            ////Console.WriteLine("Enter the value of X");
+            ////int x = Convert.ToInt32(Console.ReadLine());
 
-            Console.WriteLine("Enter the Value of Y");
-            int y = Convert.ToInt32(Console.ReadLine());
+            ////Console.WriteLine("Enter the Value of Y");
+            ////int y = Convert.ToInt32(Console.ReadLine());
 
-            Console.WriteLine((x == y) && (x <= y));
+            ////Console.WriteLine((x == y) && (x <= y));
 
             //Example 5 AND and OR
 
@@ -387,6 +387,27 @@ namespace TestingApplication
             //{
             //    Console.WriteLine("Sorry! You are Not Eligible for ID Cars");
             //}
+
+            //Example 06 AND and OR
+
+            Console.WriteLine("Enter Your Age");
+            int YourAge = Convert.ToInt32(Console.ReadLine());
+
+            Console.WriteLine("Enter Your Father Age");
+            int FatherAge = Convert.ToInt32(Console.ReadLine());
+
+            Console.WriteLine("Enter Your Mother Age");
+            int MotherAge = Convert.ToInt32(Console.ReadLine());
+
+            if ((YourAge >= 18) && (FatherAge >= 25) || (MotherAge >= 20))
+            {
+                Console.WriteLine("Congratulation!! You are Eligible for National ID Card");
+            }
+
+            if ((YourAge < 18) && (FatherAge < 25) && (MotherAge < 20))
+            {
+                Console.WriteLine("Sorry!! Your are Not Eligible for National Id Card");
+            }
 
 
 
