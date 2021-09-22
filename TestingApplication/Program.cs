@@ -4,8 +4,25 @@ using System.Collections.Generic;
 namespace TestingApplication
 {
     class Program
-    {
 
+    {
+        
+        public bool CheckPrimeNumber(int number)
+        {
+            int i;
+            for ( i = 2; i <= number - 1; i++)
+            {
+                if (number % i == 0)
+                {
+                    return false;
+                }
+            }
+            if (i == number)
+            {
+                return true;
+            }
+            return false;
+        }
         public string ValueReplace(string str)
         {
            var result =  str.Length > 1 ? str.Substring(0, 1) + str.Substring(str.Length - 1) + str.Substring(2, str.Length - 3) + str.Substring(1, 1) : str;
@@ -42,6 +59,7 @@ namespace TestingApplication
         }
         static void Main(string[] args)
         {
+
 
             //UserInform
             //ation userInfo = new UserInformation();
@@ -388,26 +406,52 @@ namespace TestingApplication
             //    Console.WriteLine("Sorry! You are Not Eligible for ID Cars");
             //}
 
-            //Example 06 AND and OR
+            ////Example 06 AND and OR
 
-            Console.WriteLine("Enter Your Age");
-            int YourAge = Convert.ToInt32(Console.ReadLine());
+            //Console.WriteLine("Enter Your Age");
+            //int YourAge = Convert.ToInt32(Console.ReadLine());
 
-            Console.WriteLine("Enter Your Father Age");
-            int FatherAge = Convert.ToInt32(Console.ReadLine());
+            //Console.WriteLine("Enter Your Father Age");
+            //int FatherAge = Convert.ToInt32(Console.ReadLine());
 
-            Console.WriteLine("Enter Your Mother Age");
-            int MotherAge = Convert.ToInt32(Console.ReadLine());
+            //Console.WriteLine("Enter Your Mother Age");
+            //int MotherAge = Convert.ToInt32(Console.ReadLine());
 
-            if ((YourAge >= 18) && (FatherAge >= 25) || (MotherAge >= 20))
+            //if ((YourAge >= 18 && FatherAge >= 25) || (MotherAge >= 20))
+            //{
+            //    Console.WriteLine("Congratulation!! You are Eligible for National ID Card");
+            //}
+
+            //if ((YourAge < 18) && (FatherAge < 25) && (MotherAge < 20))
+            //{
+            //    Console.WriteLine("Sorry!! Your are Not Eligible for National Id Card");
+            //}
+
+            //IF Eles, Else If. Check Prime Number
+
+            //Program pro = new Program();
+            //var value = Convert.ToInt32(Console.ReadLine());
+            //var result = pro.CheckPrimeNumber(value);
+            //Console.WriteLine(result);
+
+            // Check odd or even
+
+            Console.WriteLine("Enter Your Value");
+            int a = Convert.ToInt32(Console.ReadLine());
+            int result = a % 2;
+
+            if(result==0)
             {
-                Console.WriteLine("Congratulation!! You are Eligible for National ID Card");
+                Console.WriteLine("Entered Value is Even");
             }
 
-            if ((YourAge < 18) && (FatherAge < 25) && (MotherAge < 20))
+            else
             {
-                Console.WriteLine("Sorry!! Your are Not Eligible for National Id Card");
+                Console.WriteLine("Entered Value is Odd");
             }
+            
+
+
 
 
 
