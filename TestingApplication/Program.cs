@@ -7,22 +7,76 @@ namespace TestingApplication
 
     {
 
-        //public bool CheckPrimeNumber(int number)
+        //public void CheckNumber(int a)
         //{
         //    int i;
-        //    for (i = 2; i <= number - 1; i++)
+        //    for (i = 2; i <= a - 1; i++)
         //    {
-        //        if (number % i == 0)
+                
+        //        if (a % i == 0)
         //        {
-        //            return false;
+                    
         //        }
+
         //    }
-        //    if (i == number)
+
+        //    //if (a == 2)
+        //    //{
+        //    //    Console.WriteLine("Entered Value is Prime & Even");
+        //    //}
+
+        //     if (i == a)
+        //    {
+        //        Console.WriteLine("Entered Value is Prime and Odd");
+        //    }
+
+
+        //    //else if (a % 2 == 0)
+        //    //{
+        //    //    Console.WriteLine("Entered value is Even");
+        //    //}
+
+        //    //else
+        //    //{
+        //    //    Console.WriteLine("This Value is Odd");
+        //    //}
+        //}
+
+        public bool checkEvenNumber (int EvenNumber)
+        {
+            if(EvenNumber % 2 ==0)
+            {
+                return true;
+            }
+            return false;
+
+        }
+
+        //public bool checkOddNumber (int oddNumber)
+        //{
+        //    for(oddNumber 2 ==0)
         //    {
         //        return true;
         //    }
+
         //    return false;
         //}
+        public bool CheckPrimeNumber(int number)
+        {
+            int i;
+            for (i = 2; i <= number - 1; i++)
+            {
+                if (number % i == 0)
+                {
+                    return false;
+                }
+            }
+            if (i == number)
+            {
+                return true;
+            }
+            return false;
+        }
         public string ValueReplace(string str)
         {
             var result = str.Length > 1 ? str.Substring(0, 1) + str.Substring(str.Length - 1) + str.Substring(2, str.Length - 3) + str.Substring(1, 1) : str;
@@ -58,7 +112,7 @@ namespace TestingApplication
             return result;
         }
 
-       //ethod for Odd Even and Prime Number
+        //ethod for Odd Even and Prime Number
         public int OddEvenPrime(int Value)
         {
             int i;
@@ -67,31 +121,25 @@ namespace TestingApplication
             {
                 if (Value % i == 0)
                 {
-                    return 0;
-
                 }
             }
 
             if (i == Value)
             {
-                Console.WriteLine("Entered Value is Prime");
+                Console.WriteLine("Entered Value is Prime and Odd Number");
             }
             if (i % 2 == 0)
             {
                 Console.WriteLine("Entered Value is Even");
             }
 
-            if (i % 2 == 0 && i == Value)
-            {
-                Console.WriteLine("Entered Value is Prime and Even");
-            }
-
-
             else
             {
                 Console.WriteLine("Entered Value is Odd");
             }
 
+
+            return 0;
         }
 
         static void Main(string[] args)
@@ -499,51 +547,68 @@ namespace TestingApplication
 
             // Another Try
 
-            //Console.WriteLine(" Enter Your Value");
-            //var a = Convert.ToInt32(Console.ReadLine());
-            //int i;
-            //for ( i = 2; i <= a-1 ; a++)
-            //{
-            //    if(a % i ==0)
+            //    Console.WriteLine(" Enter Your Value");
+            //    var a = Convert.ToInt32(Console.ReadLine());
+
+
+            //    Program p = new Program();
+
+            //    var isPrime = p.CheckPrimeNumber(a);
+            //    if (a == 2)
             //    {
-
+            //        Console.WriteLine("Prime and Event");
             //    }
-            //}
-            //if (i == a)
-            //{
-            //    Console.WriteLine("Entered Value is Prime Number");
-            //}
-
-            //if (a % 2 == 0)
-            //{
-            //    Console.WriteLine("Entered Value is Even Number");
-            //}
-
-            //else
-            //{
-            //    Console.WriteLine("Entered Value is Odd Number");
-            //}
 
 
 
+            //    else if (isPrime)
+            //    {
+            //        Console.WriteLine("Yes this number is prime and odd");
+            //    }
 
+            //    else if (a % 2 == 0)
+            //    {
+            //        Console.WriteLine("Entered Value is Even Number");
+            //    }
 
+            //    else
+            //    {
+            //        Console.WriteLine("Entered Value is Odd Number");
+            //    }
 
+            // ANOTHER FOR ODD EVEN PRIME
+            //Console.WriteLine("enter Your Value");
+            //var b = Convert.ToInt32(Console.ReadLine());
+            //Program ValueCheck = new Program();
+            //var isPrime = ValueCheck.CheckPrimeNumber(b);
+            //ValueCheck.CheckNumber(b);
 
+            Console.WriteLine("Enter Your Value");
+            var Value = Convert.ToInt32(Console.ReadLine());
 
+            Program CheckValue = new Program();
+            var IsPrime = CheckValue.CheckPrimeNumber(Value);
+            var IsEven = CheckValue.checkEvenNumber(Value);
+            if (Value ==2)
+            {
+                Console.WriteLine("Eneter Value is Prime Number and Even Number");
+            }
+            else if (IsPrime)
+            {
+                Console.WriteLine("This is Prime Number and Odd Number ");
+            }
+            else if(IsEven)
+            {
+                Console.WriteLine("This Value is Even");
 
+            }
 
-
-
-
-
-
-
-
-
+            else
+            {
+                Console.WriteLine("Entered Value is odd");
+            }
+            
         }
-
-
     }
 }
 
