@@ -1,21 +1,45 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Linq;
 
 namespace TestingApplication
 {
     class Program
 
     {
+        //Example 22
+        public bool CheckGivenValue(int a)
+        {
+            if (Math.Abs(a - 100) <= 20 || Math.Abs(a - 200) <= 20)
+            {
+                return true;
+            }
+
+            return false;
+        }
+
+        //Example 21: 
+
+        public bool CheckInteger(int a, int b)
+        {
+
+            if (a == 20 || b == 20 || a + b == 20)
+            {
+                return true;
+            }
+
+            return false;
+        }
 
         //public void CheckNumber(int a)
         //{
         //    int i;
         //    for (i = 2; i <= a - 1; i++)
         //    {
-                
+
         //        if (a % i == 0)
         //        {
-                    
+
         //        }
 
         //    }
@@ -42,9 +66,9 @@ namespace TestingApplication
         //    //}
         //}
 
-        public bool checkEvenNumber (int EvenNumber)
+        public bool checkEvenNumber(int EvenNumber)
         {
-            if(EvenNumber % 2 ==0)
+            if (EvenNumber % 2 == 0)
             {
                 return true;
             }
@@ -583,31 +607,103 @@ namespace TestingApplication
             //var isPrime = ValueCheck.CheckPrimeNumber(b);
             //ValueCheck.CheckNumber(b);
 
-            Console.WriteLine("Enter Your Value");
-            var Value = Convert.ToInt32(Console.ReadLine());
+            //Console.WriteLine("Enter Your Value");
+            //var Value = Convert.ToInt32(Console.ReadLine());
 
-            Program CheckValue = new Program();
-            var IsPrime = CheckValue.CheckPrimeNumber(Value);
-            var IsEven = CheckValue.checkEvenNumber(Value);
-            if (Value ==2)
-            {
-                Console.WriteLine("Eneter Value is Prime Number and Even Number");
-            }
-            else if (IsPrime)
-            {
-                Console.WriteLine("This is Prime Number and Odd Number ");
-            }
-            else if(IsEven)
-            {
-                Console.WriteLine("This Value is Even");
+            //Program CheckValue = new Program();
+            //var IsPrime = CheckValue.CheckPrimeNumber(Value);
+            //var IsEven = CheckValue.checkEvenNumber(Value);
+            //if (Value ==2)
+            //{
+            //    Console.WriteLine("Eneter Value is Prime Number and Even Number");
+            //}
+            //else if (IsPrime)
+            //{
+            //    Console.WriteLine("This is Prime Number and Odd Number ");
+            //}
+            //else if(IsEven)
+            //{
+            //    Console.WriteLine("This Value is Even");
 
-            }
+            //}
 
-            else
+            //else
+            //{
+            //    Console.WriteLine("Entered Value is odd");
+            //}
+
+
+            // Example 20 Write a C# program to get the absolute value of the difference between two given numbers. Return double the absolute value of the difference if the first number is greater than second number.
+
+            // Example 21 Write a C# program to check the sum of the two given integers and return true if one of the integer is 20 or if their sum is 20
+
+            //Console.WriteLine("Enter First Value");
+            //var a = Convert.ToInt32(Console.ReadLine());
+            //Console.WriteLine("Enter First Value");
+            //var b = Convert.ToInt32(Console.ReadLine());
+            //Program CheckInt = new Program();
+            //var result = CheckInt.CheckInteger(a,b);
+            //Console.WriteLine(result);
+
+            ////Example 22 Write a C# program to check if an given integer is within 20 or 100 or 200
+
+            //Console.WriteLine("Enter First Value");
+            //var a = Convert.ToInt32(Console.ReadLine());
+            //Program Value = new Program();
+            //var CheckIntegerValue = Value.CheckGivenValue(a);
+            //Console.WriteLine(CheckIntegerValue);
+
+            //Example 23 Write a C# program to convert a given string into lowercase.
+
+
+            //  String line = "Hi, This Is Abdul Rauf Siddiqui";
+            //Console.WriteLine(line.ToLower());
+
+            //Example 24: Write a C# program to find the longest word in a string.
+
+            //Console.WriteLine("Enter The String");
+            //string Y = Console.ReadLine();
+            //var result = Y.Split(" ").ToList();
+
+            //int wrd = 0;
+            //for (int i = 0; i > result.Count; i++)
+            //{
+            //    Console.WriteLine();
+
+            //}
+            // other EX 24
+            Console.WriteLine("Enter The String");
+            string Y = Console.ReadLine();
+            string Lword = "";
+            int wrd = 0;
+
+            foreach( string s in Y)
             {
-                Console.WriteLine("Entered Value is odd");
+                if (s.Length > wrd)
+                {
+                    wrd = Lword.Length;
+                    Lword = s;
+                }
+
             }
             
+           
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
         }
     }
 }
