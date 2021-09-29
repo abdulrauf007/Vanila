@@ -663,39 +663,103 @@ namespace TestingApplication
 
             //Console.WriteLine("Enter The String");
             //string Y = Console.ReadLine();
-            //var result = Y.Split(" ").ToList();
+            //var result = Y.Split(" ");
 
-            //int wrd = 0;
-            //for (int i = 0; i > result.Count; i++)
+            //int ctr = 0;
+            //string word = string.Empty;
+            //for (int i = 0; i < result.Length; i++)
             //{
-            //    Console.WriteLine();
+            //    if (result[i].Length > ctr)
+            //    {
+            //        word = result[i];
+            //        ctr = result[i].Length;
+            //    }
+            //}
+            //Console.WriteLine(word)
+
+            //Example 24 Print Longest and Shortest Word
+
+            //Console.WriteLine("Enter The String");
+            //string str = Console.ReadLine();
+            //var result = str.Split(" ");
+
+            //int ctr = 0;
+            //string LongestWord = string.Empty;
+            //string shortestWord = string.Empty;
+
+            //for (int i = 0; i < result.Length; i++)
+            //{
+            //    if(result[i].Length < ctr)
+            //    {
+            //        LongestWord = result[i];
+            //        ctr = result[i].Length;
+            //    }
+
+            //    if (result[i].Length > ctr)
+            //    {
+            //        shortestWord = result[i];
+            //        ctr = result[i].Length;
+            //    }
 
             //}
-            // other EX 24
-            Console.WriteLine("Enter The String");
-            string Y = Console.ReadLine();
-            string Lword = "";
-            int wrd = 0;
+            //Console.WriteLine(LongestWord);
+            //Console.WriteLine(shortestWord);
 
-            foreach( string s in Y)
+
+            //Example 24.3 Print Longest and shortest word by using foreach
+
+
+            //Console.WriteLine("Enter The String");
+            //string str = Console.ReadLine();
+            //var result = str.Split(" ");
+
+            //int a = 0;
+            //string LongestWord = " ";
+
+            //foreach(string s in result)
+            //{
+            //    if( s.Length > a)
+            //    {
+            //        LongestWord = s;
+            //        a = s.Length;
+            //    }
+
+            //}
+            //Console.WriteLine(LongestWord);
+
+            //Example 24.4
+
+            Student ListofStudent = new Student();
+            var studentList = new List<Student>
             {
-                if (s.Length > wrd)
+                new Student
                 {
-                    wrd = Lword.Length;
-                    Lword = s;
+                     FirsttName = "Joge",
+                     FatherName = "Stephen",
+                     LastName ="Harry",
+                     Address = "KHI"
+
+                },
+                new Student
+                {
+                    FirsttName = "Louis",
+                    LastName = "Hope",
+                    FatherName = "Hawk",
+                     Address ="USA"
+                },
+                 new Student
+                {
+                    FirsttName = "Jhon",
+                    LastName = "Joji",
+                    FatherName = "Hawken",
+                     Address ="USA"
                 }
 
+            };
+            foreach(var s in studentList)
+            {
+                Console.WriteLine("First Name {0},Last Name {1}, Father Name {2}, Address {3}", s.FirsttName, s.LastName,s.FatherName,s.Address);
             }
-            
-           
-
-
-
-
-
-
-
-
 
 
 
